@@ -1,0 +1,16 @@
+.sidebar ul {
+    width: 100%;
+}
+.footer-column {
+    width: 100%;
+
+}
+
+.product{
+    
+    width: 75%;
+}
+.product img{
+    height: 25rem;
+    width:100%;
+  }

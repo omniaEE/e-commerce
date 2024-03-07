@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/small.css">
+  <link rel="stylesheet" media="screen and (max-width: 500px)" href="./css/phone.css">
+  
+</head>
+<body>
+  <div class="header-container">
+<!-- the site logo  -->
+    <img class="logo" src="./images/logo.svg" draggable="false">
+<!-- the search box -->
+   
+    <input class="search-box" placeholder="Search" type="text">
+<!-- the navigation-bar  -->
+ 
+    <ul class="navbar">
+      <li class="hide-on-small "><a class="navbar-item" href="#">home</a></li>
+      <li class="hide-on-small "><a class="navbar-item" href="#">products</a></li>
+      <li class="hide-on-small "><a class="navbar-item" href="#">about</a></li>
+      <li onclick=show_sidebar() class="hide-on-reg-style show-on-small  "><a class="ham-menu" href="#"><svg class="ham-menu-image" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </div>
+
+  <div class="sidebar navbar">
+    <ul>
+      <li onclick=hide_sidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="#">home</a></li>
+      <li><a href="#">products</a></li>
+      <li><a href="#">about</a></li>
+    </ul>
+  </div>
+  <!-- item -->
+  <div class="product-container" id="productContainer">
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="https://i.ibb.co/cvpntL1/hats.png" alt="Hats" />
+      <h3>Hats</h3>
+      <p>$19.99</p>
+      <div class="product-details">
+        <p>Description of Hats</p>
+       
+      </div>
+    </div>
+    
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="https://i.ibb.co/px2tCc3/jackets.png" alt="Jackets" />
+      <h3>Jackets</h3>
+      <p>$24.99</p>
+      <div class="product-details">
+        <p>Description of Jackets</p>
+       
+      </div>
+    </div>
+    
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="https://i.ibb.co/0jqHpnp/sneakers.png" alt="Sneakers" />
+      <h3>Sneakers</h3>
+      <p>$39.99</p>
+      <div class="product-details">
+        <p>Description of Sneakers</p>
+
+      </div>
+    </div>
+    
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="./images/high-heels.jpg" alt="Hight heels" />
+      <h3>Hight heels</h3>
+      <p>$29.99</p>
+      <div class="product-details">
+        <p>Description of Womens</p>
+       
+      </div>
+    </div>
+    
+    <!-- Product 5 -->
+    <div class="product">
+      <img src="./images/shirt.jpg" alt="Shirts" />
+      <h3>Shirts</h3>
+      <p>$34.99</p>
+      <div class="product-details">
+        <p>Description of Mens</p>
+       
+      </div>
+    </div>
+  </div>
+  <!-- the footer -->
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="row">
+            <div class="footer-column">
+                <h4>may we help you</h4>
+
+                <ul>
+                    
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">My Order</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Email Unsubscribe</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>the company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Code of Ethics</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Privacy & Cookie Policy</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>follow us</h4>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+               
+                    </div>
+            </div>
+  
+        </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
